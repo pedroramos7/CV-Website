@@ -14,14 +14,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   min-height: 100vh;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  transition: top 0.3s;
 }
 
 .App-link {
@@ -32,7 +37,77 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+
+.hide {
+  top: -100%;
+  /* Hide the header */
+}
+
+.Navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.NavButton {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0 10px;
+}
+
+.NavButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease;
+}
+
+.Profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-bottom: 20px;
+}
+
+.Navbar,
+ul {
+  list-style-type: none;
+  /* Removes default list styling */
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #007bff;
+  /* Example primary color */
+  --secondary-color: #495057;
+  /* Secondary color */
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+section {
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
   }
 }

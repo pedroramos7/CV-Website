@@ -1,0 +1,37 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3c2d2d; /* Replace with the actual color from the image */
+  }
+  
+  .name-title {
+    flex-grow: 1;
+    color: #ffffff;  
+    /* Add additional styling for the name title */
+  }
+  
+  .header-right-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    margin-right: 50px; /* Space between links */
+    text-decoration: none;
+    color: #ffffff;  
+  }
+  
+  .social-links {
+    /* Style for social links */
+    /* Add margins if needed */
+  }
+  
+  .social-links a {
+    margin-left: 20px; /* Space between social icons */
+  }
+  
+  /* Add media queries for responsiveness if necessary */
+  

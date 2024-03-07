@@ -1,0 +1,21 @@
+.hero-section {
+    height: 400px; /* Set the desired height */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .background-image-part {
+    width: 100%; /* Makes the div span the full width of its parent */
+    height: 100%; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    /* Set other properties like height or padding as needed */
+  }
+  
+  .white-background-part {
+    background-color: #ffffff;
+    /* Set other properties like height or padding as needed */
+  }
+  

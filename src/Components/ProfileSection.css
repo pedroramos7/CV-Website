@@ -1,0 +1,40 @@
+.profile-container {
+    display: flex;
+    align-items: center; /* Vertically center the items in the container */
+    justify-content: flex-start; /* Align items to the start of the container */
+    margin-top: 200px; /* Adjust the container's position as a whole */
+    padding-left: 150px; /* Adjust based on layout needs */
+  }
+  
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 0; /* For a rectangle */
+  }
+  
+  .profile-text {
+    margin-left: 400px; /* Space between image and text */
+    margin-top: -150px;
+    color: #ffffff;  
+  }
+  .profile-text h2 {
+    padding-bottom: 15px; /* Increase distance to the paragraph below */
+    font-family: 'Arial', sans-serif; /* Changes font style */
+    font-size: 32px; /* Increases size */
+  }
+
+  .profile-text p {
+    padding-bottom: 15px;
+    font-size: 20px; /* Increases size */
+    font-family: 'Times New Roman', serif; /* Changes font style */
+  }
+  
+  .profile-text h2, .profile-text p {
+    margin: 0; /* Remove default margins */
+  }
+  
+  .linkedin-icon {
+    color: #0A66C2; /* LinkedIn color */
+    font-size: 24px; /* Adjust size as needed */
+  }
+  

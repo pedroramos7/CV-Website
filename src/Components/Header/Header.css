@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #3c2d2d; /* Replace with the actual color from the image */
+    padding: 0.5rem 2rem;
+    background-color: #130338; /* Replace with the actual color from the image */
   }
   
   .name-title {

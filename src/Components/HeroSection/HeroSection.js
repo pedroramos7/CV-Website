@@ -1,7 +1,7 @@
 import React from 'react';
-import backgroundImage from '../images/background.jpg'; // Update the path to your image
+import backgroundImage from '../../images/background.jpg'; // Update the path to your image
 import './HeroSection.css'; 
-import ProfileSection from './ProfileSection';
+import ProfileSection from '../ProfileSection/ProfileSection';
 
 function HeroSection() {
   return (

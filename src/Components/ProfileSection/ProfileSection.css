@@ -34,7 +34,24 @@
   }
   
   .linkedin-icon {
-    color: #0A66C2; /* LinkedIn color */
+    color: #ffffff; /* LinkedIn color */
     font-size: 24px; /* Adjust size as needed */
   }
+  
+  .social-icon{
+    margin-right: 15px; /* Adjust the space as needed */
+  }
+
+  .github-icon{
+    color: #ffffff; /* LinkedIn color */
+    font-size: 24px; /* Adjust size as needed */
+  }
+
+  .brief-text p {
+    margin: 20px auto; /* Adjust as needed */
+    padding: 0 20px; /* Adjust as needed for padding */
+    color: #333; /* Text color */
+    max-width: 1200px; /* Adjust as needed */
+  }
+  
   

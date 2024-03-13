@@ -1,5 +1,5 @@
 .hero-section {
-    height: 400px; /* Set the desired height */
+    height: 350px; /* Set the desired height */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -15,7 +15,20 @@
   }
   
   .white-background-part {
+    height: 400px;
     background-color: #ffffff;
     /* Set other properties like height or padding as needed */
   }
   
+
+  .About-me {
+    height: 500px;
+    /* background-color: #e0dbdb; */
+    background-color: #b0d3ee;
+  }
+
+  .Professional-Experience {
+    min-height: 500px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  }

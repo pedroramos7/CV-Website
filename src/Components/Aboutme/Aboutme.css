@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+
+.aboutme-section {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    padding: 20px;
+    margin-left: 8%;
+  }
+  
+  .aboutme-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; /* Larger font size for titles */
+    font-weight: 700; /* Makes the font bolder */
+    letter-spacing: 0.05em; /* Adds spacing between letters */
+    line-height: 1.6; 
+    margin-top: 12%;
+    flex-basis: 20%; 
+    margin-right: 2%; /* Adds some space between the title and the content */
+  }
+  
+  .aboutme-content {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6; 
+    margin-top: 50px;
+    justify-content: center;
+    flex-basis: 78%; /* Adjust the width as needed */
+    max-width: 600px; /* Sets maximum width for the content */
+    margin-left: 420px;
+  }
+  

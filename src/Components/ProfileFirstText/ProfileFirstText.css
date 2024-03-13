@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+
+.profile-first-text {
+    padding: 10px;
+    margin-left: 835px;
+    max-width: 400px;
+  }
+  .profile-first-text p {
+    font-family: 'Open Sans', sans-serif; /* This is a good modern font for body text */
+    line-height: 1.6; /* This increases space between lines for better readability */
+    margin-bottom: 20px; /* Adds space below the paragraph */
+  }
+
+  .about-me-button {
+    padding: 10px 20px;
+    color: black; /* Black text */
+    border: 2px solid #368DF3; /* Blue border */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .about-me-button:hover {
+    background-color: white; /* White background on hover */
+  }
+  

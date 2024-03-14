@@ -5,6 +5,7 @@ import ProfileSection from '../ProfileSection/ProfileSection';
 import ProfileFirstText from '../ProfileFirstText/ProfileFirstText';
 import Aboutme from '../Aboutme/Aboutme';
 import ProfessionalExperience from '../ProfessionalExperience/ProfessionalExperience';
+import Projects from '../Projects/Projects';
 
 function HeroSection() {
   return (
@@ -22,6 +23,9 @@ function HeroSection() {
     </div>
     <div className='Professional-Experience'>
       <ProfessionalExperience />
+    </div>
+    <div className='Projects'>
+      <Projects />
     </div>
 
   </>

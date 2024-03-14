@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+.Projects-section {
+    display: flex;  
+    align-items: center;   
+    padding: 20px;
+    margin-left: 8%;
+  }
+
+  
+  .Projects-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; /* Larger font size for titles */
+    font-weight: 700; /* Makes the font bolder */
+    letter-spacing: 0.05em; /* Adds spacing between letters */
+    line-height: 1.6; 
+    flex-basis: 20%; 
+    margin-right: 2% 0; /* Adds some space between the title and the content */
+    text-align: center; /* Ensures the text is centered */
+  }
+  
+  .Projects-content {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6; 
+    justify-content: center;
+    flex-basis: 78%; /* Adjust the width as needed */
+    max-width: 600px; /* Sets maximum width for the content */
+    margin-left: 30%;
+  }
+  
+  .Projects-title {
+    /* Style for the Projects title, it will be above Projects description due to column direction */
+    margin-bottom: 0rem; /* Add space below the Projects title */
+  }
+
+  .Projects-title h2 {
+
+  font-weight: normal; /* If you want to remove bold styling */
+  color: black; /* If you want a lighter color, for example */
+  font-size: 1rem; /* Larger font size for titles */
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+  .Projects-title h3{
+    margin-bottom: 0;
+  }
+  
+  .Projects-resume {
+    margin-top: 0;
+  }
+  
+
+  .toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* Style as needed, maybe add padding or size adjustments */
+  }
+
+  .Projects-details {
+    font-size: 0.85rem;
+    color: #5d5d5d;
+    margin-top: 0.5rem;
+
+  } 

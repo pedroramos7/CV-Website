@@ -31,4 +31,10 @@
     min-height: 500px;
     height: auto;
     background-color: rgb(255, 255, 255);
+  } 
+
+  .Projects {
+    min-height: 500px;
+    height: auto;
+    background-color: #b0d3ee;
   }

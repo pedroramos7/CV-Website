@@ -1,0 +1,168 @@
+.contact-section {
+    display: flex;
+    background-color: #ffffff; /* Dark brown background */
+    color: white;
+    padding: 40px;
+    align-items: center; /* Center children vertically */
+    min-height: 50vh; /* Minimum height */
+  }
+  
+  .contact-info {
+    margin-left: 8%;
+    padding: 20px; /* Padding inside each section for spacing */
+    color: black;
+  }
+  
+  .contact-info h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; /* Larger font size for titles */
+    font-weight: 700; /* Makes the font bolder */
+    letter-spacing: 0.05em; /* Adds spacing between letters */
+    line-height: 1.6; 
+    flex-basis: 20%; 
+  }
+
+  .social-media {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .contact-form-container {
+    margin-left: 30%;
+    background: #ffffff; /* Light background */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight depth effect */
+    max-width: 500px; /* Adjust as needed */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .contact-form textarea {
+    height: 150px; /* Larger area for message */
+    resize: vertical; /* Allows the user to resize vertically */
+  }
+  
+  .send-button {
+    background-color: #007bff; /* Standout color for the button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Adjust input placeholder color */
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #aaa;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .input-group {
+      flex-direction: column;
+    }
+  
+    .input-group input {
+      margin-right: 0;
+      margin-bottom: 15px; /* Space between inputs on small screens */
+    }
+  }
+      
+  .contact-info .email-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .contact-info .email-info .FaEnvelope {
+    margin-right: 5px;
+  }
+
+  .tooltip {
+    visibility: hidden; /* Hide by default */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Prevent text wrapping */
+    transition: visibility 0.2s ease, opacity 0.2s ease;
+    opacity: 0;
+}
+
+  
+  .email-info:hover .tooltip {
+    visibility: visible; /* show on hover */
+    opacity: 1;
+  }
+  
+
+  .email-sent-message {
+    align-items: center;
+    color: red;
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+
+  .email-icon {
+    padding-right: 3px;
+    font-size: 24px; /* Adjust the size of the icon */
+    color: #007bff; /* Icon color */
+    transition: transform 0.2s ease-in-out, color 0.2s ease;
+}
+
+.email-info:hover .email-icon {
+    transform: scale(1.1); /* Slightly increase the icon size on hover */
+    color: #0056b3; /* Change color on hover for feedback */
+}
+
+
+.address-info {
+  display: flex;
+  align-items: start; 
+  margin-bottom: 10%;
+}
+
+.address-icon {
+  padding-right: 3px; /* Adds some space between the icon and the text */
+  color: #007bff; /* Example color, adjust as needed */
+  font-size: 20px; /* Adjust size as needed */
+}
+
+.address-text {
+  display: block;
+}

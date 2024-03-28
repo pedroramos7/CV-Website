@@ -6,6 +6,7 @@ import ProfileFirstText from '../ProfileFirstText/ProfileFirstText';
 import Aboutme from '../Aboutme/Aboutme';
 import ProfessionalExperience from '../ProfessionalExperience/ProfessionalExperience';
 import Projects from '../Projects/Projects';
+import Contacts from  '../Contacts/Contacts'
 
 function HeroSection() {
   return (
@@ -26,6 +27,9 @@ function HeroSection() {
     </div>
     <div className='Projects'>
       <Projects />
+    </div>
+    <div className='Contacts'>
+      <Contacts />
     </div>
 
   </>

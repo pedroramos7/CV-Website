@@ -1,57 +1,118 @@
-.profile-container {
-    display: flex;
-    align-items: center; /* Vertically center the items in the container */
-    justify-content: flex-start; /* Align items to the start of the container */
-    margin-top: 200px; /* Adjust the container's position as a whole */
-    padding-left: 150px; /* Adjust based on layout needs */
+
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #130338;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.2rem; /* Slightly larger font size for readability */
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background: url('../../images/background.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow for contrast */
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profile-text {
+  text-align: center;
+  max-width: 80%; /* Limits the width of the text block */
+  margin-bottom: 20px;
+}
+
+.profile-text h2 {
+  font-size: 2.5rem; /* Larger font size for the name */
+  margin: 0.5rem 0;
+  font-weight: 700; /* Bold weight for emphasis */
+  letter-spacing: 1px; /* Spacing between letters for better readability */
+}
+
+.profile-text p {
+  font-size: 1.5rem; /* Larger font size for the subtitle */
+  margin-bottom: 1rem;
+  font-weight: 300; /* Lighter weight for contrast */
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+.welcome-paragraph {
+  text-align: center;
+  font-size: 1.2rem; /* Slightly larger font size for readability */
+  margin: 1rem 0;
+  max-width: 600px; /* Adjust the width for readability */
+  line-height: 1.5; /* Improved line height for readability */
+}
+
+.about-me-button {
+  background-color: #ffffff;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem; /* Increased padding for better touch target */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: 500; /* Medium weight for emphasis */
+  transition: background-color 0.3s ease;
+}
+
+.about-me-button:hover {
+  background-color: #004494; /* Darker shade on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px;
+    height: auto;
   }
-  
+
   .profile-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 0; /* For a rectangle */
+    width: 120px; /* Smaller image on mobile */
+    height: 120px;
   }
-  
-  .profile-text {
-    margin-left: 400px; /* Space between image and text */
-    margin-top: -150px;
-    color: #ffffff;  
-  }
+
   .profile-text h2 {
-    padding-bottom: 15px; /* Increase distance to the paragraph below */
-    font-family: 'Arial', sans-serif; /* Changes font style */
-    font-size: 32px; /* Increases size */
+    font-size: 2rem; /* Smaller heading on mobile */
   }
 
   .profile-text p {
-    padding-bottom: 15px;
-    font-size: 20px; /* Increases size */
-    font-family: 'Times New Roman', serif; /* Changes font style */
-  }
-  
-  .profile-text h2, .profile-text p {
-    margin: 0; /* Remove default margins */
-  }
-  
-  .linkedin-icon {
-    color: #ffffff; /* LinkedIn color */
-    font-size: 24px; /* Adjust size as needed */
-  }
-  
-  .social-icon{
-    margin-right: 15px; /* Adjust the space as needed */
+    font-size: 1.2rem; /* Smaller text on mobile */
   }
 
-  .github-icon{
-    color: #ffffff; /* LinkedIn color */
-    font-size: 24px; /* Adjust size as needed */
+  .social-icon {
+    font-size: 1.5rem; /* Smaller icons on mobile */
   }
 
-  .brief-text p {
-    margin: 20px auto; /* Adjust as needed */
-    padding: 0 20px; /* Adjust as needed for padding */
-    color: #333; /* Text color */
-    max-width: 1200px; /* Adjust as needed */
+  .welcome-paragraph {
+    font-size: 1rem; /* Smaller text size for readability on mobile */
   }
-  
-  
+
+  .about-me-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 0.5rem 1rem; /* Smaller padding */
+  }
+}

@@ -1,37 +1,80 @@
-/* Header.css */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 2rem;
-    background-color: #130338; /* Replace with the actual color from the image */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #130338; /* Dark base color for contrast */
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.name-title {
+  color: #ffffff;
+  font-size: 2rem; /* Larger font size for better visibility */
+}
+
+.header-right-content {
+  position: relative; /* Establishes a positioning context for absolute positioning inside */
+}
+
+.nav-links {
+  display: none; /* Hidden by default, shown only when nav-toggle is clicked */
+  position: absolute;
+  top: 60px; /* Spacing from the top of the header */
+  right: 0; /* Align to the right side */
+  background-color: #242424; /* Dark background for menu */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+  padding: 10px;
+  width: 220px; /* Fixed width for the dropdown */
+  transition: transform 0.3s ease-out, opacity 0.3s ease; /* Smooth transitions for effect */
+  transform-origin: top right;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.nav-links.visible {
+  display: flex; /* Flex layout for vertical stacking */
+  flex-direction: column;
+  opacity: 1; /* Fully opaque when visible */
+  transform: scaleY(1); /* Scale effect from the transform-origin */
+}
+
+.nav-links a {
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 0; /* Padding for spacing */
+  width: 100%; /* Make links take full width for easier clicking */
+  text-align: center; /* Center text within links */
+  font-size: 1rem; /* Adjust font size as needed */
+  font-family: 'Open Sans', sans-serif; /* Font style */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.nav-links a:hover {
+  background-color: #444444; /* Background color on hover */
+}
+
+.nav-toggle {
+  color: #ffffff;
+  font-size: 2.5rem; /* Large size for easy clicking */
+  cursor: pointer; /* Cursor indicates clickable item */
+  background: none; /* No background for a clean look */
+  border: none; /* No border for a clean look */
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+.nav-toggle.rotated {
+  transform: rotate(90deg); /* Rotates 90 degrees when menu is open */
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block; /* Show the nav-toggle only on mobile devices */
   }
-  
+
   .name-title {
-    flex-grow: 1;
-    color: #ffffff;  
-    /* Add additional styling for the name title */
+    text-align: left; /* Align title to the left on smaller screens */
   }
-  
-  .header-right-content {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-links a {
-    margin-right: 50px; /* Space between links */
-    text-decoration: none;
-    color: #ffffff;  
-  }
-  
-  .social-links {
-    /* Style for social links */
-    /* Add margins if needed */
-  }
-  
-  .social-links a {
-    margin-left: 20px; /* Space between social icons */
-  }
-  
-  /* Add media queries for responsiveness if necessary */
-  
+}

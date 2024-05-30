@@ -4,6 +4,8 @@ import './Aboutme.css';
 function Aboutme() {
     return (
       <div id="aboutme-section" className="aboutme-section">
+        <div className="background-shape background-shape1"></div>
+        <div className="background-shape background-shape2"></div>
         <h2 className="aboutme-title">Professional <br /> Summary</h2>
         <div className="aboutme-content">
           <p>With a Master's degree in Electrical and Computer Engineering in hand, I merge solid academic
@@ -20,7 +22,6 @@ function Aboutme() {
         </div>
       </div>
     );
-  }
-  
-  export default Aboutme;
-  
+}
+
+export default Aboutme;

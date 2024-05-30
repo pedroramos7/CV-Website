@@ -16,9 +16,6 @@ function HeroSection() {
       <ProfileSection />
       </div>
     </div>
-    <div className='white-background-part'>
-      <ProfileFirstText />
-    </div>
     <div className='About-me'>
       <Aboutme />
     </div>

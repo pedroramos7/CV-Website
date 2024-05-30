@@ -1,11 +1,10 @@
 .hero-section {
-    height: 350px; /* Set the desired height */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center; /* Align items vertically center */
+  justify-content: center; /* Center content horizontally */
+  height: 50vh; /* Full viewport height */
+}
+
   .background-image-part {
     width: 100%; /* Makes the div span the full width of its parent */
     height: 100%; /* Adjust the height as needed */
@@ -14,6 +13,14 @@
     /* Set other properties like height or padding as needed */
   }
   
+
+  .hero-section, .background-image-part {
+    background-size: cover; /* Covers the entire section, maintaining aspect ratio */
+    background-position: center; /* Keeps the image centered */
+    background-repeat: no-repeat; /* Prevents image repeat */
+  }
+
+
   .white-background-part {
     height: 400px;
     background-color: #ffffff;
@@ -22,7 +29,7 @@
   
 
   .About-me {
-    height: 500px;
+    min-height: 500px;
     /* background-color: #e0dbdb; */
     background-color: #b0d3ee;
   }
@@ -44,3 +51,19 @@
     height: auto;
     background-color: #ffffff;
   }
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 50vh; /* Smaller height on mobile */
+    }
+    
+  
+    .white-background-part, .About-me, .Professional-Experience, .Projects, .Contacts {
+      min-height: 30vh; /* Less height needed on mobile */
+      padding: 1rem; /* Smaller padding on mobile */
+    }
+  
+    .name-title, .About-me, .Professional-Experience, .Projects, .Contacts {
+      font-size: 1rem; /* Smaller font size on mobile */
+    }
+  }
+  

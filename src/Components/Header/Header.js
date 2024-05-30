@@ -1,17 +1,37 @@
-// Header.js
-import React from 'react';
-import './Header.css'; // Link to the CSS file for styling
+import React, { useState } from 'react';
+import './Header.css';
 
 function Header() {
+  const [isNavVisible, setIsNavVisible] = useState(false);
+  const [rotate, setRotate] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavVisible(!isNavVisible);
+    setRotate(!rotate);
+  };
+
+  // Function to handle smooth scrolling and menu toggle
+  const handleNavigation = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    setIsNavVisible(false); // Close the menu after clicking
+    setRotate(false); // Reset the rotation of the hamburger icon
+  };
+
   return (
     <div className="header">
       <h1 className="name-title">Pedro Ramos</h1>
       <div className="header-right-content">
-        <div className="nav-links">
-          <a href="#about">Sobre</a>
-          <a href="#publications">Publicações</a>
-          <a href="#research">Blog de pesquisa</a>
-          <a href="#contact">Contato</a>
+        <button className={`nav-toggle ${rotate ? 'rotated' : ''}`} onClick={toggleNav}>
+          ☰
+        </button>
+        <div className={`nav-links ${isNavVisible ? 'visible' : ''}`}>
+          <a onClick={() => handleNavigation('aboutme-section')} href="#about">About</a>
+          <a onClick={() => handleNavigation('Professional-Experience')} href="#experience">Experience</a>
+          <a onClick={() => handleNavigation('Projects-section')} href="#projects">Projects</a>
+          <a onClick={() => handleNavigation('contact-section')} href="#contact">Contact</a>
         </div>
       </div>
     </div>

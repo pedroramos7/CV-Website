@@ -109,7 +109,9 @@ function ContactSection() {
             value={formValues.message}
             onChange={handleChange}
           ></textarea>
-          <button type="submit" className="send-button" disabled={emailSent}>Send</button>
+          <button type="submit" className="send-button" disabled={emailSent}>
+            {emailSent ? 'Sending...' : 'Send'}
+          </button>
         </form>
         {emailSent && <p className="email-sent-message">Your email has been sent!</p>}
       </div>
